@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social media</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <h2 class="logo">mySocial</h2>
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" placeholder="Search for inspiration" />
+        </div>
+        <div class="create">
+          <label for="create-posts" class="btn btn-primary">Create</label>
+          <div class="profile-photo">
+            <img src="./image.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container">
+        <div class="left"></div>
+
+        <div class="middle">
+          <form class="create-post">
+            <div class="profile-photo">
+              <img src="./image.jpg" alt="" />
+            </div>
+            <input
+              type="text"
+              placeholder="What`s new, Hailey?"
+              id="create-post"
+            />
+            <input type="submit" value="Post" class="btn btn-primary" />
+          </form>
+        </div>
+
+        <div class="right">
+          <a href="" class="profile">
+            <div class="profile-photo">
+              <img src="./image.jpg" alt="" />
+            </div>
+            <div class="handle">
+              <h4>Hailey Baldwin</h4>
+              <p class="text-muted">@haileyb</p>
+            </div>
+          </a>
+
+          <div class="sidebar">
+            <a class="menu-item active">
+              <h3>Home</h3>
+              <span><i class="fa-solid fa-house"></i></span>
+            </a>
+            <a class="menu-item">
+              <h3>Explore</h3>
+              <span><i class="fa-regular fa-compass"></i></span>
+            </a>
+            <a class="menu-item" id="messages-notifications">
+              <h3>Message</h3>
+              <span>
+                <i class="fa-regular fa-message">
+                  <small class="notification-count">9+</small></i
+                >
+              </span>
+            </a>
+            <a class="menu-item">
+              <h3>Notifications</h3>
+              <span
+                ><i class="fa-regular fa-bell"
+                  ><small class="notification-count">6</small></i
+                ></span
+              >
+
+              <div class="notifications-popup" id="notifications">
+                <div>
+                  <div class="profile-photo">
+                    <img src="./image1.jpg" />
+                  </div>
+                  <div class="notifications-body">
+                    <b>Kylie Jenner</b> accepted your friend request
+                    <small class="text-muted">2 DAYS AGO</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-photo">
+                    <img src="./image1.jpg" />
+                  </div>
+                  <div class="notifications-body">
+                    <b>Kylie Jenner</b> accepted your friend request
+                    <small class="text-muted">2 DAYS AGO</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-photo">
+                    <img src="./image1.jpg" />
+                  </div>
+                  <div class="notifications-body">
+                    <b>Kylie Jenner</b> accepted your friend request
+                    <small class="text-muted">2 DAYS AGO</small>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="menu-item">
+              <h3>Bookmarks</h3>
+              <span><i class="fa-regular fa-bookmark"></i></span>
+            </a>
+            <a class="menu-item">
+              <h3>Setting</h3>
+              <span><i class="fa-solid fa-gear"></i></span>
+            </a>
+          </div>
+
+          <label for="create-post" class="btn btn-primary">Create Post</label>
+        </div>
+      </div>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
