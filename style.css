@@ -1,8 +1,13 @@
 :root {
-  --color-dark: hsl(252, 30%, 17%);
-  --color-white: hsl(252, 30%, 100%);
-  --color-light: hsl(252, 30%, 95%);
-  --color-primary: hsl(252, 75%, 60%);
+  --primary-color-hue: 252;
+  --dark-color-lightness: 17%;
+  --light-color-lightness: 95%;
+  --white-color-lightness: 100%;
+
+  --color-dark: hsl(252, 30%, var(--dark-color-lightness));
+  --color-white: hsl(252, 30%, var(--white-color-lightness));
+  --color-light: hsl(252, 30%, var(--light-color-lightness));
+  --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
   --color-secondary: hsl(252, 100%, 90%);
   --color-gray: hsl(252, 15%, 65%);
   --color-success: hsl(120, 95%, 65%);
@@ -242,7 +247,7 @@ main .container .right .profile {
   box-shadow: 0 0 2rem hsl(var(--color-primary), 75%, 60%, 25%);
   z-index: 8;
 
-  display: block;
+  display: none;
 }
 
 .right .notifications-popup::after {
@@ -607,7 +612,7 @@ main .container .left {
     display: none;
   }
 
-  .customize-theme .card{
+  .customize-theme .card {
     width: 92vw;
   }
 }
@@ -658,7 +663,7 @@ main .container .left {
     display: none;
   }
 
-  .customize-theme .card{
+  .customize-theme .card {
     width: 92vw;
   }
 }
