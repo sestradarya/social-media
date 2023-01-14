@@ -75,6 +75,7 @@ const openThemeModal = () => {
 const closeThemeModal = (e) => {
   if (e.target.classList.contains("customize-theme")) {
     themeModal.style.display = "none";
+    theme.classList.remove('active')
   }
 };
 themeModal.addEventListener("click", closeThemeModal);
