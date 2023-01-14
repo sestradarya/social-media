@@ -326,6 +326,10 @@ main .container .right .profile {
   align-items: center;
 }
 
+.middle .feed .interaction-buttons span{
+  padding-right: .6rem;
+}
+
 main .container .left {
   height: max-content;
   position: sticky;
@@ -666,4 +670,11 @@ main .container .left {
   .customize-theme .card {
     width: 92vw;
   }
+}
+
+
+
+.text{
+  font-size: 1rem;
+  padding: 1.5rem .8rem .8rem;
 }

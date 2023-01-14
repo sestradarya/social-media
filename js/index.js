@@ -18,6 +18,7 @@ const Bg1 = document.querySelector('.bg-1')
 const Bg2 = document.querySelector('.bg-2')
 const Bg3 = document.querySelector('.bg-3')
 
+
 // SIDEBAR
 
 const changeActiveItem = () => {
@@ -196,3 +197,10 @@ Bg3.addEventListener('click', () => {
 
     changeBG();
 })
+
+
+
+//-------------TEST------------------------
+
+
+

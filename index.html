@@ -29,7 +29,7 @@
         <div class="create">
           <label for="create-posts" class="btn btn-primary">Create</label>
           <div class="profile-photo">
-            <img src="./image.jpg" alt="" />
+            <img src="./me.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -130,14 +130,14 @@
         <div class="middle">
           <form class="create-post">
             <div class="profile-photo">
-              <img src="./image.jpg" alt="" />
+              <img src="./me.jpg" alt="" />
             </div>
             <input
               type="text"
-              placeholder="What`s new, Hailey?"
+              placeholder="What`s new, Darina?"
               id="create-post"
             />
-            <input type="submit" value="Post" class="btn btn-primary" />
+            <input type="submit" value="Post" id="create-post-btn" class="btn btn-primary" />
           </form>
 
           <div class="feeds">
@@ -180,55 +180,17 @@
               <div class="comments text-muted">View all 112 comments</div>
             </div>
 
-            <div class="feed">
-              <div class="head">
-                <div class="profile-photo">
-                  <img src="./image1.jpg" alt="" />
-                </div>
-                <div class="info">
-                  <h3>Kylie Jenner</h3>
-                  <small>LA, 20 MINUTES AGO</small>
-                </div>
-                <span class="edit">
-                  <i class="fa-solid fa-ellipsis"></i>
-                </span>
-              </div>
-              <div class="photo">
-                <img src="./image1.jpg" alt="" />
-              </div>
-              <div class="action-buttons">
-                <div class="interaction-buttons">
-                  <span><i class="fa-regular fa-heart"></i></span>
-                  <span><i class="fa-regular fa-comment"></i></span>
-                  <span><i class="fa-solid fa-share-nodes"></i></span>
-                </div>
-                <div class="bookmark">
-                  <span><i class="fa-regular fa-bookmark"></i></span>
-                </div>
-              </div>
-              <div class="likes">
-                <b>2,345 likes</b>
-              </div>
-              <div class="captions">
-                <p>
-                  <b>Kylie Jenner</b> Made a billion quite by myself
-                  <span class="hashtag">#billionair</span>
-                </p>
-              </div>
-
-              <div class="comments text-muted">View all 112 comments</div>
-            </div>
           </div>
         </div>
 
         <div class="right">
           <a href="" class="profile">
             <div class="profile-photo">
-              <img src="./image.jpg" alt="" />
+              <img src="./me.jpg" alt="" />
             </div>
             <div class="handle">
-              <h4>Hailey Baldwin</h4>
-              <p class="text-muted">@haileyb</p>
+              <h4>Darina Nguen</h4>
+              <p class="text-muted">@nguend</p>
             </div>
           </a>
 
@@ -269,20 +231,20 @@
                 </div>
                 <div>
                   <div class="profile-photo">
-                    <img src="./image1.jpg" />
+                    <img src="./selena.jpg" />
                   </div>
                   <div class="notifications-body">
-                    <b>Kylie Jenner</b> accepted your friend request
-                    <small class="text-muted">2 DAYS AGO</small>
+                    <b>Selena Gomez</b> accepted your friend request
+                    <small class="text-muted">3 DAYS AGO</small>
                   </div>
                 </div>
                 <div>
                   <div class="profile-photo">
-                    <img src="./image1.jpg" />
+                    <img src="./justin.jpg" />
                   </div>
                   <div class="notifications-body">
-                    <b>Kylie Jenner</b> accepted your friend request
-                    <small class="text-muted">2 DAYS AGO</small>
+                    <b>Justin Bieber</b> accepted your friend request
+                    <small class="text-muted">3 DAYS AGO</small>
                   </div>
                 </div>
               </div>
@@ -293,7 +255,7 @@
             </a>
             <a class="menu-item" id="theme">
               <h3>Theme</h3>
-              <span><i class="fa-solid fa-gear"></i></span>
+              <span><i class="fa-solid fa-palette"></i></span>
             </a>
             <a class="menu-item">
               <h3>Setting</h3>
@@ -357,5 +319,6 @@
       </div>
     </div>
     <script src="./js/index.js"></script>
+    <script src="./js/postAdding.js"></script>
   </body>
 </html>
