@@ -71,9 +71,10 @@ renderPosts();
 
 createPostBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  const prevPosts = postsField.innerHTML;
+  if (createPostInput.value != "") {
+    const prevPosts = postsField.innerHTML;
 
-  postsField.innerHTML = `
+    postsField.innerHTML = `
     <div class="feed">
     <div class="head">
         <div class="profile-photo">
@@ -113,6 +114,7 @@ createPostBtn.addEventListener("click", (e) => {
 </div>
     `;
 
-  postsField.innerHTML += prevPosts;
-  createPostInput.value = "";
+    postsField.innerHTML += prevPosts;
+    createPostInput.value = "";
+  }
 });
