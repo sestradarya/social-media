@@ -14,10 +14,9 @@ let root = document.querySelector(":root");
 
 const colorPalette = document.querySelectorAll(".choose-color span");
 
-const Bg1 = document.querySelector('.bg-1')
-const Bg2 = document.querySelector('.bg-2')
-const Bg3 = document.querySelector('.bg-3')
-
+const Bg1 = document.querySelector(".bg-1");
+const Bg2 = document.querySelector(".bg-2");
+const Bg3 = document.querySelector(".bg-3");
 
 // SIDEBAR
 
@@ -75,7 +74,7 @@ const openThemeModal = () => {
 const closeThemeModal = (e) => {
   if (e.target.classList.contains("customize-theme")) {
     themeModal.style.display = "none";
-    theme.classList.remove('active')
+    theme.classList.remove("active");
   }
 };
 themeModal.addEventListener("click", closeThemeModal);
@@ -127,8 +126,7 @@ fontSizes.forEach((size) => {
   });
 });
 
-
-// COLOR 
+// COLOR
 
 colorPalette.forEach((color) => {
   color.addEventListener("click", () => {
@@ -139,11 +137,11 @@ colorPalette.forEach((color) => {
     if (color.classList.contains("color-1")) {
       primaryHue = 252;
     } else if (color.classList.contains("color-2")) {
-      primaryHue = 52;
+      primaryHue = 19;
     } else if (color.classList.contains("color-3")) {
       primaryHue = 352;
     } else if (color.classList.contains("color-4")) {
-      primaryHue = 152;
+      primaryHue = 100;
     } else if (color.classList.contains("color-5")) {
       primaryHue = 202;
     }
@@ -152,7 +150,6 @@ colorPalette.forEach((color) => {
   });
 });
 
-
 // BACKGROUND
 
 let lightColorLightness;
@@ -160,48 +157,43 @@ let darkColorLightness;
 let whiteColorLightness;
 
 const changeBG = () => {
-    root.style.setProperty('--light-color-lightness', lightColorLightness);
-    root.style.setProperty('--dark-color-lightness', darkColorLightness);
-    root.style.setProperty('--white-color-lightness', whiteColorLightness);
-}
+  root.style.setProperty("--light-color-lightness", lightColorLightness);
+  root.style.setProperty("--dark-color-lightness", darkColorLightness);
+  root.style.setProperty("--white-color-lightness", whiteColorLightness);
+};
 
-Bg1.addEventListener('click', () => {
-    darkColorLightness = '95%'
+Bg1.addEventListener("click", () => {
+  darkColorLightness = "95%";
 
-    Bg1.classList.add('active')
-    Bg2.classList.remove('active')
-    Bg3.classList.remove('active')
+  Bg1.classList.add("active");
+  Bg2.classList.remove("active");
+  Bg3.classList.remove("active");
 
-    window.location.reload();
-})
+  window.location.reload();
+});
 
-Bg2.addEventListener('click', () => {
-    darkColorLightness = '95%'
-    whiteColorLightness = '20%'
-    lightColorLightness = '15%'
+Bg2.addEventListener("click", () => {
+  darkColorLightness = "95%";
+  whiteColorLightness = "20%";
+  lightColorLightness = "15%";
 
-    Bg2.classList.add('active')
-    Bg1.classList.remove('active')
-    Bg3.classList.remove('active')
+  Bg2.classList.add("active");
+  Bg1.classList.remove("active");
+  Bg3.classList.remove("active");
 
-    changeBG();
-})
+  changeBG();
+});
 
-Bg3.addEventListener('click', () => {
-    darkColorLightness = '95%'
-    whiteColorLightness = '10%'
-    lightColorLightness = '0%'
+Bg3.addEventListener("click", () => {
+  darkColorLightness = "95%";
+  whiteColorLightness = "10%";
+  lightColorLightness = "0%";
 
-    Bg3.classList.add('active')
-    Bg1.classList.remove('active')
-    Bg2.classList.remove('active')
+  Bg3.classList.add("active");
+  Bg1.classList.remove("active");
+  Bg2.classList.remove("active");
 
-    changeBG();
-})
-
-
+  changeBG();
+});
 
 //-------------TEST------------------------
-
-
-

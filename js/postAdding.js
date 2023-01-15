@@ -1,7 +1,7 @@
 const postsField = document.querySelector(".feeds");
 
-const createPostInput = document.getElementById('create-post')
-const createPostBtn = document.getElementById('create-post-btn')
+const createPostInput = document.getElementById("create-post");
+const createPostBtn = document.getElementById("create-post-btn");
 
 async function getPost() {
   options = {
@@ -24,8 +24,6 @@ async function renderPosts() {
 
   posts.forEach((post) => {
     const { id, image, likes, owner, text, publishDate } = post;
-    
-    
 
     postsField.innerHTML += `
                   <div class="feed" id=${id}>
@@ -67,18 +65,15 @@ async function renderPosts() {
                   </div>
               `;
   });
-
 }
 
-renderPosts()
+renderPosts();
 
+createPostBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  const prevPosts = postsField.innerHTML;
 
-createPostBtn.addEventListener('click', (e) => {
-    e.preventDefault()
-    const prevPosts = postsField.innerHTML
-
-    
-    postsField.innerHTML = `
+  postsField.innerHTML = `
     <div class="feed">
     <div class="head">
         <div class="profile-photo">
@@ -118,7 +113,6 @@ createPostBtn.addEventListener('click', (e) => {
 </div>
     `;
 
-    postsField.innerHTML += prevPosts
-    createPostInput.value = ''
-})
-
+  postsField.innerHTML += prevPosts;
+  createPostInput.value = "";
+});
